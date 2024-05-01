@@ -99,4 +99,52 @@ public class PersonDao {
             e.printStackTrace();
         }
     }
+    // public void addMultipalEmployee(){
+    //     try {
+    //         String query="INSERT INTO employees(id, name, email, designation, address) VALUES (?, ?, ?, ?, ?)";
+    //         PreparedStatement statement= connection.prepareStatement(query);
+    //         Scanner sc=new Scanner(System.in);
+    //         while (true){
+    //             System.out.println("Enter id");
+    //             int id= sc.nextInt();
+    //             sc.nextLine();
+    //             System.out.println("Enter name");
+    //             String name=sc.nextLine();
+    //             System.out.println("Enter email");
+    //             String email=sc.nextLine();
+    //             System.out.println("Enter Designation");
+    //             String designation=sc.nextLine();
+    //             System.out.println("Enter Address");
+    //             String address=sc.nextLine();
+    //             statement.setInt(1,id);
+    //             statement.setString(2,name);
+    //             statement.setString(3,email);
+    //             statement.setString(4,designation);
+    //             statement.setString(5,address);
+    //             statement.addBatch();
+    //             System.out.println("Want to add more employee records y/n");
+    //             String ans=sc.nextLine();
+    //             if(ans.equals("n")){
+    //                 break;
+    //             }
+    //         }
+    //         statement.executeUpdate();
+    //     }catch (Exception e){
+    //         e.printStackTrace();
+    //     }
+    // }
+
+    // public void createTable(){
+    //     try {
+    //         Scanner sc=new Scanner(System.in);
+    //         System.out.println("Enter table name");
+    //         String name=sc.nextLine();
+    //         String query="CREATE TABLE "+name+" (id int, name varchar(100), designation varchar(100), address varchar(100))";
+    //         try(PreparedStatement statement=connection.prepareStatement(query)){
+    //             statement.execute();
+    //         }
+    //     }catch (Exception e){
+    //         e.printStackTrace();
+    //     }
+    // }
 }
