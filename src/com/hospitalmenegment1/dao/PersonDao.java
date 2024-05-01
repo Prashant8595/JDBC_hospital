@@ -18,21 +18,7 @@ public class PersonDao {
             e.printStackTrace();
         }
     }
-//public void createtable(String name){
-//        try {
-//            String query="CREATE TABLE +this.name+" +
-//                    "(id int, name varchar(100), " +
-//                    "email varchar(100), " +
-//                    "designation varchar(100), " +
-//                    "address varchar(100), bill int)";
-//            try(PreparedStatement psmt1=connection.prepareStatement(query)){
-//                psmt1.setString(1,name);
-//                psmt1.executeUpdate();
-//            }
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
-//}
+
     public void addperson(Person person){
         try {
             String query="INSERT INTO person(id, name, email, designation, address, illness, bill ) VALUES (?, ?, ?, ?, ?, ?, ?)";
